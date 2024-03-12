@@ -1,0 +1,21 @@
+package AutomationExercise1.Testcases;
+
+import org.testng.annotations.Test;
+
+import AutomationExercise1.Pages.BaseTest;
+import AutomationExercise1.Pages.Login;
+
+public class ScrollTC extends BaseTest{
+
+	Login vl = new Login(driver);
+	
+	@Test
+	public void VerifyScrollUpwithArrowbuttonandScrollDownfunctionalityl() {
+		vl.HomePage();
+		vl.scrollupwitharrow();
+	}
+	
+	public void VerifyScrollUpwithoutArrowbuttonandScrollDownfunctionalityl() {
+		vl.scrollupwithoutarrow();
+	}
+}
